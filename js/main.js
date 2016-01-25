@@ -57,6 +57,10 @@ var Class1 = function(){
         console.log('Sum is:',this.getSum(0,numbers.length-1));
         //console.log('Min is:',getMin(0,numbers.length-1))
     };
+    this.getSum=function(){
+        numbers = arguments;
+        console.log('Sum is:',this.getSum(0,numbers.length-1));
+    }
     this.getSum = function( initialIndex,endIndex) {
         if(initialIndex === endIndex);
         { return numbers[endIndex]};
@@ -67,3 +71,41 @@ var Class1 = function(){
 
     };
 };
+
+
+var countWords=function(paragraph)
+{
+   //return paragraph.length;
+   // return 4;
+   return paragraph.split(' ').length;
+};
+
+
+var paragraph = 'Hello'
+var totalWords=countWords(paragraph);
+console.log ('TotalWords:',totalWords);
+
+var currentDay=function()
+{
+  var day;
+    if (date.getDay()==0)
+        day="Sunday";
+    else if (date.getDay()==1)
+     day="Monday";
+    else if (date.getDay()==2)
+     day="Tuesday";
+    else if (date.getDay()==3)
+        day="Wednesday";
+    else if (date.getDay()==4)
+        day="Thursday";
+    else if (date.getDay()==5)
+        day="Friday";
+    else if (date.getDay()==6)
+        day="Saturday";
+    //day ={0:'sun',1:'mon',2:'tues'};
+    console.log ('Today is:',day);
+    console.log ('Current time is:',date.getTime());
+};
+var date = new Date();
+
+
