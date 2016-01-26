@@ -81,12 +81,12 @@ var countWords=function(paragraph)
 };
 
 
-var paragraph = 'Hello'
+var paragraph = 'Hello Guys'
 var totalWords=countWords(paragraph);
 console.log ('TotalWords:',totalWords);
 
 var currentDay=function()
-{
+{ var date = new Date();
   var day;
     if (date.getDay()==0)
         day="Sunday";
@@ -102,10 +102,13 @@ var currentDay=function()
         day="Friday";
     else if (date.getDay()==6)
         day="Saturday";
+    var month = new Array ("January","February","March","April","May","Jun","July","August","September","Octuber","November","December");
+    var d = new Date();
+    console.log('Date: '+d.getDate(),month[d.getMonth()],d.getFullYear())
     //day ={0:'sun',1:'mon',2:'tues'};
     console.log ('Today is:',day);
-    console.log ('Current time is:',date.getTime());
+    console.log ('Current time is:',d.getHours(),':'+ d.getMinutes(),':'+d.getSeconds());
 };
-var date = new Date();
+
 
 
