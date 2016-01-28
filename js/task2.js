@@ -25,6 +25,7 @@ var currentDay=function()
     //day ={0:'sun',1:'mon',2:'tues'};
     console.log ('Today is:',day);
     console.log ('Current time is:',d.getHours(),':'+ d.getMinutes(),':'+d.getSeconds());
+
 };
 
 
