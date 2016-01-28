@@ -2,7 +2,8 @@
  * Created by Administrator on 1/26/2016.
  */
 var currentDay=function()
-{ var date = new Date();
+{ 
+    var date = new Date();
     var day;
     if (date.getDay()==0)
         day="Sunday";
