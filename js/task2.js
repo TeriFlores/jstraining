@@ -2,7 +2,7 @@
  * Created by Administrator on 1/26/2016.
  */
 var currentDay=function()
-{ 
+{
     var date = new Date();
     var day;
     if (date.getDay()==0)
@@ -26,4 +26,6 @@ var currentDay=function()
     console.log ('Today is:',day);
     console.log ('Current time is:',d.getHours(),':'+ d.getMinutes(),':'+d.getSeconds());
 };
+
+
 
