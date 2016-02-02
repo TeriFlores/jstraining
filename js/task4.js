@@ -28,7 +28,6 @@ sayHello1('Lucy',function(name3){
         console.log('Sum is:'+ res);
     })();
 
-
 // autoejecutable
 (function(a,b){
     var a= 1,b=3;
