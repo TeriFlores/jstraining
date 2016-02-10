@@ -27,5 +27,6 @@ var Player=function(){
     };
     this.getPosY= function () {
         return posy;
+        
     };
 };
